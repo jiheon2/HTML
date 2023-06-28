@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        var count = prompt("배열의 크기 : ","");
+        var word_array = new Array(count);
+        
+    for(i=0; i<count; i++) {
+        word_array[i] = prompt("문자열을 입력하세요", "");
+    } 
+    
+        
+    document.write("배열의 크기: " + count + "<br>");
+    document.write("배열의 내용 : " + "<br>");
+    
+    
+    word_array.sort();
+    for(i=0; i<word_array.length; i++) {
+        document.write("word_array[" + i + "] : " + word_array[i] + "<br>");
+    }
+    
+    document.write("<br>");
+    
+
+    word_array.reverse();
+    for(i=0; i<word_array.length; i++) {
+        document.write("word_array[" + i + "] : " + word_array[i] + "<br>");
+    }
+    </script>
+</body>
+</html>

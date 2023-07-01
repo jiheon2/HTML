@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>계산기</h1>
+    <script type="text/javascript">
+    var firstNum = prompt("첫번째 숫자를 입력하세요 :", "");
+    var quotient = prompt("사칙연산(+, -, *, /) 중 하나를 입력하세요 :", "");
+    var secondNum = prompt("두번째 숫자를 입력하세요 :", "");
+    var result;
+        
+    switch(quotient) {
+        case "+":
+            result = parseFloat(firstNum) + parseFloat(secondNum);
+            document.write("값 : " + result);
+            break;
+        case "-":
+            result = parseFloat(firstNum) - parseFloat(secondNum);
+            document.write("값 : " + result);
+            break;
+        case "*":
+            result = parseFloat(firstNum) * parseFloat(secondNum);
+            document.write("값 : " + result);
+            break;
+        case "/":
+            result = parseFloat(firstNum) / parseFloat(secondNum);
+            document.write("값 : " + result);
+            break;
+        default:
+            document.write("연산자를 잘못 선택하셨습니다.");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+strong {color: red;}
+.ex {color: blue; background-color: chartreuse;}
+#main {color: darkkhaki;}
+a:link{color: aqua;}
+a:visited{color: cyan;}
+a:hover{color: coral; background-color: yellow;}    
+p{font-family: "궁서체","굴림체";
